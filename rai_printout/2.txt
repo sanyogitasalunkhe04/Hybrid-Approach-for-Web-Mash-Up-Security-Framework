@@ -1,0 +1,30 @@
+predicates
+	add(integer,integer,integer)
+	subtract(integer,integer,integer)
+	muliply(integer,integer,integer)
+	divide(integer,integer,integer)
+clauses
+	add(x,y,Sum):-
+		sum=x+y.
+	subtract(x,y,Diff):-
+		Diff=x-y.
+	muliply(x,y,Prod):-
+		Prod=x*y.
+	divide(x,y,Quo):-
+		Quo=x/y.
+
+/******OUTPUT*****/
+Goal: add(1,3,R)
+R=4
+1 Solution
+Goal: subtract(1,3,R)
+R=-2
+1 Solution
+Goal: multiply(1,3,R)
+R=3
+1 Solution
+Goal: divide(1,3,R)
+R=0
+1 Solution
+
+*/
